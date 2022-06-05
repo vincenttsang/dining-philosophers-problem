@@ -11,6 +11,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class MethodController {
+    private final List<Fork> forks = new LinkedList<>();
+    private final List<Label> labels = new LinkedList<>();
     ExecutorService event = Executors.newCachedThreadPool();
     @FXML
     private ImageView Phi_0;
@@ -34,8 +36,6 @@ public class MethodController {
     private Label Label_3;
     @FXML
     private Label Label_4;
-    private final List<Fork> forks = new LinkedList<>();
-    private final List<Label> labels = new LinkedList<>();
 
     public void init() {
         for (int i = 0; i < 5; i++) {

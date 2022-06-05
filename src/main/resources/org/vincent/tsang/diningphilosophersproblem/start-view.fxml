@@ -32,30 +32,25 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.vincent.tsang.diningphilosophersproblem.StartScreenController">
-  <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="373.0" prefWidth="470.0" VBox.vgrow="ALWAYS">
-      <children>
-            <MenuButton fx:id="MenuBtn" layoutX="39.0" layoutY="46.0" mnemonicParsing="false" text="请选择方法">
-              <items>
-                <MenuItem mnemonicParsing="false" onAction="#method_1" text="方法1" />
-                <MenuItem mnemonicParsing="false" onAction="#method_2" text="方法2" />
-                <MenuItem mnemonicParsing="false" onAction="#method_3" text="方法3" />
-              </items>
-            </MenuButton>
-            <TextArea fx:id="MyTextArea" layoutX="181.0" layoutY="46.0" prefHeight="269.0" prefWidth="249.0" />
-            <Button fx:id="StartBtn" onMouseClicked="#ClickedStart" disable="true" layoutX="39.0" layoutY="289.0" mnemonicParsing="false" text="开始" />
-      </children>
-    </AnchorPane>
-  </children>
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18"
+      fx:controller="org.vincent.tsang.diningphilosophersproblem.StartScreenController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="373.0" prefWidth="470.0" VBox.vgrow="ALWAYS">
+            <children>
+                <MenuButton fx:id="MenuBtn" layoutX="39.0" layoutY="46.0" mnemonicParsing="false" text="请选择方法">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#method_1" text="方法1"/>
+                        <MenuItem mnemonicParsing="false" onAction="#method_2" text="方法2"/>
+                        <MenuItem mnemonicParsing="false" onAction="#method_3" text="方法3"/>
+                    </items>
+                </MenuButton>
+                <TextArea fx:id="MyTextArea" layoutX="181.0" layoutY="46.0" prefHeight="269.0" prefWidth="249.0"/>
+                <Button fx:id="StartBtn" onMouseClicked="#ClickedStart" disable="true" layoutX="39.0" layoutY="289.0"
+                        mnemonicParsing="false" text="开始"/>
+            </children>
+        </AnchorPane>
+    </children>
 </VBox>
