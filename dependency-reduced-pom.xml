@@ -27,7 +27,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>org.vincenttsang.viewer.MainApplication</mainClass>
+                  <mainClass>org.vincent.tsang.diningphilosophersproblem.MainApplication</mainClass>
                 </transformer>
               </transformers>
             </configuration>
